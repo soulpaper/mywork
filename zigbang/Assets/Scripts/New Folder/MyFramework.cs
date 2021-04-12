@@ -72,6 +72,7 @@ public class MyFramework : MonoBehaviour
 			foreach(var data in buildingDic.Values)
 			{
 				data.Clear();
+				Destroy(data.gameObject);
 			}
 			buildingDic.Clear();
 		}
